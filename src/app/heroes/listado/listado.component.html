@@ -1,0 +1,32 @@
+<p>listado de Heroes</p>
+
+<div>
+    <!--*ngif  =  mostrará el tag H3 solo si heroeBorrado es diferente de ''
+         else entonces mostrara un templete que yo defina-->
+    <h3 *ngIf = "heroeBorrado !== ''  else  sinBorrarAun "> Heroe Borrado:  <small> {{ heroeBorrado }} </small> </h3>
+    
+</div>
+
+<!--si entra al else, entonces mostrara lo que está  contenido 
+    en el templete sinBorrarAun-->
+<ng-template #sinBorrarAun>
+    <h3>No se ha borrado Nadie</h3>
+</ng-template>
+
+
+
+<button (click) = " borrarHeroe()">
+    Borrar 
+</button>
+
+<p><br></p>
+
+<ul>
+    <!--Aqui pongo el *ngfor para recorrer el arreglo-->
+    <li *ngFor = "let heroe of heroes; let i = index"> 
+     {{ i+1 }} - {{ heroe }}
+    </li>
+</ul>
+
+
+ 

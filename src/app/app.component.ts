@@ -5,6 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
+/* Esta es la clase de app component
+   Aqui ponemos todo el typescript de app.component.html
+    */
 export class AppComponent {
-  title = 'bases';
+  /*Atributos de la clase Appcomponent*/ 
+  
+
+  
+
+
 }
