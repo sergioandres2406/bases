@@ -39,3 +39,25 @@
   .p-1 {
     padding: 1px;
   }
+
+  /*  con el display flex en el atributo row
+   hacemos que se muestren los div contenidos
+   dentro de row de izquierda a derecha */  
+
+  .row {
+    display: flex;
+  }
+
+  
+  .col {
+    /* flex-grow en 1 es para que se expandan las
+    columnas lo mas que se pueda en la pantalla */
+    flex-grow: 1;
+    
+    margin-right: 10px;
+  }
+
+  input{
+    display: block;
+    margin: 5px; 
+  }   

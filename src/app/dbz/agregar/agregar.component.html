@@ -1,0 +1,33 @@
+<h3>Agregar <small>{{nuevo.nombre}}</small></h3>
+<hr>
+<!-- cuando agrego parentesis a una etiqueta en html, estoy 
+llamando un evento. en la etiqueta form estoy especificando que cuando
+presionen el boton tipo submit del formulario, va a llamar la función agregar()-->
+
+<!--en el value lo pongo en corchetes y quiere decir que espera un objeto, en este caso
+le envio el valor nombre contenido en el objeto nuevo, creado en maincomponent.ts-->
+<form (ngSubmit)="agregar(  )">
+    <input 
+        type="text" 
+        placeholder="Nombre" 
+        name= "nombre"
+        [(ngModel)] = nuevo.nombre
+    />
+
+    <!--[value]="nuevo.nombre"
+    (input)="cambiarNombre( $event )" -->
+
+    <input 
+        type="number" 
+        placeholder="Poder"
+        name= "poder"
+        [(ngModel)] = nuevo.poder
+        
+     />
+    
+    <button type="submit">
+        Agregar Personaje
+    </button>
+
+</form>
+
