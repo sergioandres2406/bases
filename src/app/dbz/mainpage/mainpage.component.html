@@ -1,25 +1,25 @@
 <h1>Dragon Ball Z</h1>
 <hr>
 
-<div class="row"> 
+<div class="row">
 
     <div class="col">
-        <!--Aqui llamo el componente personajes.  
-        [personajes]=personajes,  quiere decir que al elemento personajes que 
+        <!--Aqui llamo el componente personajes.
+        [personajes]=personajes,  quiere decir que al elemento personajes que
         se encuentra  en el módulo de personajes.component se le lleve lo que hay definido
          en el array de objetos de personajes de mainpage.component-->
-        <app-personajes [personajes] = "personajes"></app-personajes>
-        
+        <app-personajes></app-personajes>
+
     </div>
 
     <div class = "col">
-       
-        <app-agregar 
-         [nuevo] = "nuevo"
-         (onNuevoPersonaje)="agregarNuevoPersonaje ( $event )"
-         ></app-agregar>
+
+        <!--mis personajes = a los personajes definidos en el main page
+         [nuevo] es un objeto definido en mainpagecomponent.ts -->
+
+        <app-agregar [nuevo] = "nuevo" ></app-agregar>
 
     </div>
-    
+
 
 </div>

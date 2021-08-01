@@ -2,8 +2,8 @@
 <hr>
 <ul>
     <!--Aqui pongo el *ngfor para recorrer el arreglo-->
-    <li *ngFor = "let personaje of personajes; let i = index"> 
-        <!--el | number  sirve para que muestre en la pantalla en formato numbero-->
+    <li *ngFor = "let personaje of personajes; let i = index">
+        <!--el | number  sirve para que muestre en la pantalla en formato numero-->
         {{ personaje.nombre }} -  {{ personaje.poder | number}}
     </li>
 </ul>
